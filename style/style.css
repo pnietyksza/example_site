@@ -1,0 +1,134 @@
+.top
+{
+  background-color: #434343;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  opacity: 0.5;
+  z-index: 1;
+
+}
+.mid
+{
+  height: 700px;
+  text-align: center;
+  margin: 0px;
+  background-image:url('/mypage/media/it-wall-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  clear: both;
+}
+.bot
+{
+  text-align: center;
+  background-color: gray;
+  margin: 0;
+}
+.body
+{
+  background-color: gray;
+  margin: 0;
+}
+.h1
+{
+  margin: 0;
+  font-family: 'Zhi Mang Xing', cursive;
+  color: #1f1f1f;
+}
+#footer
+{
+  font-size: 25px;
+}
+@media screen and (max-width: 700px) {
+  .navi ul
+  {
+    flex-direction: column;
+  }
+  .top
+  {
+    position: relative;
+    top: 0px;
+  }
+}
+
+.navi ul
+{
+  background: #434343;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+}
+.navi a
+{
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  font-weight: bold;
+  transition: background .1s;
+}
+.navi a:hover
+{
+  background: black;
+  text-decoration: none;
+  color: white;
+}
+.navi
+{
+  text-align: center;
+  background-color: white;
+  margin:0px;
+  border: 0px;
+  padding: 0;
+  z-index: 2;
+}
+.middle
+{
+  height: 700px;
+  text-align: center;
+  margin: 0px;
+  background-image:url('/mypage/media/it-wall-4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.mid_fotter
+{
+  height: 70px;
+  text-align: center;
+  margin: 0px;
+}
+#animated_text
+{
+  position: relative;
+  top: 50%;
+}
+.myButton {
+	background-color:#3a473e;
+	border-radius:38px;
+	border:3px solid #030303;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;
+  position: relative;
+  top: 40%;
+  outline: 0;
+
+}
+.myButton:hover {
+	background-color:#70756d;
+}
+.myButton:active {
+	position:relative;
+	top:41%;
+}

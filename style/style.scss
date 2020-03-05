@@ -1,0 +1,37 @@
+$dwcolor: #3cbabe;
+@mixin animation-delay($time) {
+	animation-delay: $time;
+}
+h2 {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	display: flex;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-style: normal;
+	font-family: 'Lato';
+	font-weight: 800;
+	color: $dwcolor;
+	font-size: 3em;
+	.letter {
+		transform: scale(0);
+		animation: pop-up .25s forwards;
+		@for $i from 1 through 13 {
+            &:nth-child(#{$i}) {
+                @include animation-delay((0s + ($i * 0.05)));
+            }
+	    }
+        &.heart{
+           line-height: 1.25em;
+        }
+	}
+}
+
+@keyframes pop-up {
+	0%{transform: scale(0) translateY(-10px); opacity: 0;}
+	80%{transform: scale(1.2) translateY(-2px); opacity: .8;}
+	100%{transform: scale(1) translateY(0px); opacity: 1;}
+}
